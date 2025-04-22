@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Shop Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+      <!-- Logo instead of text -->
+      <a class="navbar-brand" href="#">
+          <img src="https://insidegovernment.co.nz/wp-content/uploads/2022/02/TV_Shop_Logo-696x591.png" alt="TV Shop Logo" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-white active" href="products.html">Products</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <!-- Cart Icon and Dropdown -->
+          <div class="d-flex align-items-center">
+              <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+              <a href="register.html" class="btn btn-light">Register</a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+
+
+
+<!-- Profile Section -->
+<!-- Full-Width Hero Section -->
+<section class="hero-section text-white d-flex align-items-center" style="height: 100vh; background-image: url('https://image.cnbcfm.com/api/v1/image/103036151-GettyImages-115977907.jpg?v=1545051092'); background-size: cover; background-position: center;">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Welcome to TV Shop</h1>
+    <p class="lead">Your one-stop destination for the latest Smart, 4K, and OLED TVs.</p>
+    <a href="products.html" class="btn btn-primary btn-lg me-2">Shop Now</a>
+    <a href="#featured-products" class="btn btn-outline-light btn-lg">Explore More</a>
+  </div>
+</section>
+
+
+<<!-- Featured Products -->
+<section class="py-5" id="featured-products">
+  <div class="container">
+    <h3 class="mb-4">Featured TVs</h3>
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.lg.com/ph/images/tvs/md07571492/gallery/OLED55A3PSA-OLED-TV-DZ-01.jpg" class="card-img-top" alt="TV 1">
+          <div class="card-body">
+            <h5 class="card-title">LG 55" 4K Smart TV</h5>
+            <p class="card-text">Ultra HD, Dolby Vision, WebOS Smart Platform.</p>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#lgModal">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://img.us.news.samsung.com/us/wp-content/uploads/2023/02/06144517/QN77S95CAFXZA_Front1-scaled.jpg" class="card-img-top" alt="TV 2">
+          <div class="card-body">
+            <h5 class="card-title">Samsung 43" Crystal UHD</h5>
+            <p class="card-text">Slim Design, Voice Assistant, Crystal Processor 4K.</p>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#samsungModal">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://images.herzindagi.info/image/2023/Aug/sony-43-inches.jpg" class="card-img-top" alt="TV 3">
+          <div class="card-body">
+            <h5 class="card-title">Sony Bravia 50"</h5>
+            <p class="card-text">Google TV, Dolby Atmos, HDR10 Support.</p>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sonyModal">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for LG 55" TV -->
+<div class="modal fade" id="lgModal" tabindex="-1" aria-labelledby="lgModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lgModalLabel">LG 55" 4K Smart TV</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://www.lg.com/ph/images/tvs/md07571492/gallery/OLED55A3PSA-OLED-TV-DZ-01.jpg" class="img-fluid" alt="LG TV">
+        <p><strong>Price:</strong> $999.99</p>
+        <p><strong>Details:</strong></p>
+        <p>Experience immersive Ultra HD with Dolby Vision on this 55" OLED TV. Enjoy the WebOS Smart Platform and easy access to a variety of streaming services. This TV also offers HDR support for stunning contrast and vibrant colors.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Samsung 43" TV -->
+<div class="modal fade" id="samsungModal" tabindex="-1" aria-labelledby="samsungModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="samsungModalLabel">Samsung 43" Crystal UHD</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://img.us.news.samsung.com/us/wp-content/uploads/2023/02/06144517/QN77S95CAFXZA_Front1-scaled.jpg" class="img-fluid" alt="Samsung TV">
+        <p><strong>Price:</strong> $799.99</p>
+        <p><strong>Details:</strong></p>
+        <p>The Samsung 43" Crystal UHD TV features a slim design and powerful 4K Crystal Processor. With voice assistant support, this TV provides seamless integration with your smart home devices, offering an enhanced viewing experience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Sony 50" TV -->
+<div class="modal fade" id="sonyModal" tabindex="-1" aria-labelledby="sonyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sonyModalLabel">Sony Bravia 50"</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.herzindagi.info/image/2023/Aug/sony-43-inches.jpg" class="img-fluid" alt="Sony TV">
+        <p><strong>Price:</strong> $899.99</p>
+        <p><strong>Details:</strong></p>
+        <p>This Sony Bravia 50" TV features Google TV, allowing access to all your favorite apps and services. With Dolby Atmos sound and HDR10 support, enjoy an incredible viewing and listening experience.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (needed for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5>About Us</h5>
+        <p>We specialize in the latest Smart, 4K, and OLED TVs from top brands. Experience cinema-quality viewing right in your living room.</p>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li><strong>Email:</strong> contact@tvshop.com</li>
+          <li><strong>Phone:</strong> +123 456 7890</li>
+          <li><strong>Address:</strong> 123 Main Street, Tech City</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <div>
+          <a href="#" class="btn btn-outline-light btn-sm me-2">Facebook</a>
+          <a href="#" class="btn btn-outline-light btn-sm me-2">Twitter</a>
+          <a href="#" class="btn btn-outline-light btn-sm">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+    <p>&copy; 2025 TV Shop. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
